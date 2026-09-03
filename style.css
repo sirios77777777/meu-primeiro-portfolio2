@@ -1,90 +1,106 @@
-*{
-    margin: 10;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(255, 185, 185);
-}
 
-body {
-    height: 100vh;
-}
-.teste{
-    font-size: 35px;
-    font-size: 35px;
-    font-size: 35px;
-    font-size: 35px;
-}
-nav {
-    display: flex;
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    align-items: center;
+    body {
+      background-color: #31353d;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-    padding: 20px;
+    /* Cabeçalho / Navbar */
+    header {
+      background-color: #31353d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-bottom: 1px solid #23262c;
+    }
 
-    gap: 30px;
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
 
-    border-bottom: 2px solid black;
-}
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
 
-h1 {
-    margin-right: 30px;
-}
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
 
-a {
-    text-decoration: none;
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
 
-    color: black;
-}
+    .nav-links a:hover {
+      opacity: 0.8;
+    }
 
-button {
-    margin-left: auto;
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+    }
 
-    padding: 10px;
-}
+    .btn {
+      padding: 6px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
 
+    .btn-login {
+      background-color: #0d8a72;
+      color: #ffffff;
+      border: 1px solid #0d8a72;
+    }
 
+    .btn-login:hover {
+      background-color: #0b735f;
+    }
 
+    .btn-register {
+      background-color: #0d8a72;
+      color: #ffffff;
+      border: 1px solid #0d8a72;
+    }
 
-#solucoes {
-    position: relative;
-}
+    .btn-register:hover {
+      background-color: #0b735f;
+    }
 
+    /* Estrutura das Seções da Página */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
 
+    .section-teal {
+      background-color: #0d8296;
+      flex: 1;
+      min-height: 220px;
+    }
 
-
-#opcoes {
-    display: none;
-
-    position: absolute;
-
-    top: 100%;
-    left: 0;
-
-    width: 220px;
-
-    padding: 10px;
-
-    background-color: rgb(0, 0, 0);
-
-    border: 1px solid rgb(255, 255, 255);
-
-    z-index: 1000;
-}
-
-#opcoes a {
-    display: block;
-
-    padding: 10px;
-}
-
-
-
-#solucoes:hover #opcoes {
-    display: block;
-}
-
-
-#cv {
-size: 40px;
-
-}
+    .section-dark {
+      background-color: #31353d;
+      flex: 1;
+      min-height: 220px;
+    }
