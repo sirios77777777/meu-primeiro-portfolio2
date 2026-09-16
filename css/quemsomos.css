@@ -23,6 +23,7 @@
         }
 
         .logo {
+            padding: 5px 10px;
             color: #ffffff;
             font-size: 22px;
             font-weight: bold;
@@ -91,3 +92,93 @@
             max-width: 10000000px;
         }
 
+.mockup-window {
+    border-radius: 8px;
+    width: 480px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    flex-shrink: 0;
+        }
+
+        .hero {
+            background-color: #008294;
+            padding: 30px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .hero-text {
+            max-width: 420px;
+            color: #ffffff;
+        }
+
+        .hero-text h1 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+
+        .hero-text p {
+            font-size: 11px;
+            line-height: 1.35;
+            font-weight: 600;
+            opacity: 0.95;
+            max-width: 360px;
+        }
+
+        /* Window / Mockup */
+        .mockup-window {
+            background-color: #3b4048;
+            border-radius: 8px;
+            width: 480px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .window-bar {
+            background-color: #1c2024;
+            padding: 8px 12px;
+            display: flex;
+            gap: 6px;
+        }
+
+        .dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+      
+        .window-content {
+            padding: 110px 50px;
+        }
+
+        .interactive-area {
+            border: 1.5px dashed #6b7280;
+            border-radius: 4px;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #7b8494;
+            font-size: 13px;
+        }
+
+        /* Block Sections Below */
+        .section-dark {
+            background-color: #333840;
+            height: 280px;
+            width: 100%;
+        }
+
+        .section-teal {
+            background-color: #008294;
+            height: 320px;
+            width: 100%;
+            flex-grow: 1;
+        }
